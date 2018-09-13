@@ -1,0 +1,17 @@
+{
+  "name": "craldi",
+  "version": "0.0.1",
+  "description": "This repo is licensed under the [MIT License](LICENSE).",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartw/craldi.git"
+  },
+  "author": "Bart Wijnants",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bartw/craldi/issues"
+  },
+  "homepage": "https://github.com/bartw/craldi#readme"
+}
