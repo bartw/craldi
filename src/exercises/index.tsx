@@ -70,8 +70,8 @@ export default class Exercises extends Component<Props, State> {
           <Modal onClose={this.hideForm}>
             <Form
               name={this.state.selectedExercise.name}
-              handleChange={this.handleChange}
-              handleSubmit={this.handleSubmit}
+              onChange={this.handleChange}
+              onSubmit={this.handleSubmit}
             />
           </Modal>
         )}

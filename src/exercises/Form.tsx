@@ -1,26 +1,19 @@
 import React, { FormEvent } from "react";
+import {Form, SubmitButton, TextInput} from "../shared/form";
 
 interface Props {
   name: string;
-  handleChange: (name: string) => void;
-  handleSubmit: () => void;
+  onChange: (name: string) => void;
+  onSubmit: () => void;
 }
 
-const Form = ({ name, handleChange, handleSubmit }: Props) => {
-  const onChange = (event: FormEvent<HTMLInputElement>) =>
-    handleChange(event.currentTarget.value);
-
-  const onSubmit = (event: FormEvent<HTMLInputElement>) => {
-    event.preventDefault();
-    handleSubmit();
-  };
-
+const ExerciseForm = ({ name, onChange, onSubmit }: Props) => {
   return (
-    <form>
-      <input type="text" value={name} onChange={onChange} />
-      <input type="button" value="Save" onClick={onSubmit} />
-    </form>
+    <Form onSubmit={onSubmit}>
+      <TextInput value={name} onChange={onChange} />
+      <SubmitButton label="Save" onSubmit={onSubmit} />
+    </Form>
   );
 };
 
-export default Form;
+export default ExerciseForm;
