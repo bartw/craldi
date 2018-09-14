@@ -1,11 +1,11 @@
 import Equipment from "./Equipment";
 
 const mockData = [
-  Equipment.create("abc", "No equipment"),
-  Equipment.create("bcd", "Kettlebell"),
-  Equipment.create("cde", "TRX"),
-  Equipment.create("def", "Battle rope"),
-  Equipment.create("efg", "Various")
+  Equipment.create("No equipment"),
+  Equipment.create("Kettlebell"),
+  Equipment.create("TRX"),
+  Equipment.create("Battle rope"),
+  Equipment.create("Various")
 ];
 
 export default mockData;
