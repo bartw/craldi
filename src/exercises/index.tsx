@@ -5,7 +5,7 @@ import SubTitle from "../shared/SubTitle";
 import Button from "../shared/Button";
 import Modal from "../shared/Modal";
 import Form from "./Form";
-import Table from "./Table";
+import Table from "../shared/table";
 
 interface Props {}
 
@@ -61,7 +61,11 @@ export default class Exercises extends Component<Props, State> {
         <Button onClick={() => this.showForm(Exercise.new())}>
           Add exercise
         </Button>
-        <Table exercises={this.state.exercises} onEdit={this.showForm} />
+        <Table
+          items={this.state.exercises}
+          keys={["name"]}
+          actions={[{ action: this.showForm, label: "edit" }]}
+        />
         {this.state.showForm && (
           <Modal onClose={this.hideForm}>
             <Form

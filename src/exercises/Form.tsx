@@ -1,5 +1,5 @@
-import React, { FormEvent } from "react";
-import {Form, SubmitButton, TextInput} from "../shared/form";
+import React from "react";
+import { Form, SubmitButton, TextInput } from "../shared/form";
 
 interface Props {
   name: string;
