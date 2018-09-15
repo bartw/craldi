@@ -12,6 +12,7 @@ const Title = ({ className, children }: Props) => (
 const Styled = styled(Title)`
   font-size: 2em;
   font-weight: bold;
+  margin: 10px 0;
 `;
 
 export default Styled;

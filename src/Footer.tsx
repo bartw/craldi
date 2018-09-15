@@ -9,8 +9,7 @@ const Footer = ({ className }: StyledProps) => (
 );
 
 const Styled = styled(Footer)`
-  width: 100%;
-  margin-bottom: 20px;
+  padding: 10px 0;
   text-align: center;
   font-size: 0.75em;
 `;

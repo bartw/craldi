@@ -10,7 +10,7 @@ const Main = ({ className, children }: Props) => (
 );
 
 const Styled = styled(Main)`
-  width: 100%;
+  flex-grow: 1;
 `;
 
 export default Styled;
