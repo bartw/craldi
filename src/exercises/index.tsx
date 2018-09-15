@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import mockData from "./mockData";
 import Exercise from "./Exercise";
+import SubTitle from "../shared/SubTitle";
+import Button from "../shared/Button";
 import Modal from "../shared/Modal";
 import Form from "./Form";
-import SubTitle from "../shared/SubTitle";
+import Table from "./Table";
 
 interface Props {}
 
@@ -53,20 +55,13 @@ export default class Exercises extends Component<Props, State> {
   };
 
   render() {
-    const exercises = this.state.exercises.map((exercise: Exercise) => (
-      <li key={exercise.id}>
-        <div>{exercise.name}</div>
-        <button onClick={() => this.showForm(exercise)}>Edit</button>
-      </li>
-    ));
-
     return (
       <div>
         <SubTitle>Exercises</SubTitle>
-        <button onClick={() => this.showForm(Exercise.create(""))}>
+        <Button onClick={() => this.showForm(Exercise.new())}>
           Add exercise
-        </button>
-        <ul>{exercises}</ul>
+        </Button>
+        <Table exercises={this.state.exercises} onEdit={this.showForm} />
         {this.state.showForm && (
           <Modal onClose={this.hideForm}>
             <Form

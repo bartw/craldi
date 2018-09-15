@@ -10,4 +10,8 @@ export default class Exercise {
     exercise.name = name;
     return exercise;
   }
+
+  static new(): Exercise {
+    return this.create("");
+  }
 }

@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import Button from "../shared/Button";
 
 interface Props {
   onClose: () => void;
@@ -7,7 +8,7 @@ interface Props {
 
 const Modal = ({ onClose, children }: Props) => (
   <div>
-    <button onClick={onClose}>Close</button>
+    <Button onClick={onClose}>Close</Button>
     <div>{children}</div>
   </div>
 );
