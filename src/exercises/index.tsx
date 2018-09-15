@@ -3,6 +3,7 @@ import mockData from "./mockData";
 import Exercise from "./Exercise";
 import Modal from "../shared/Modal";
 import Form from "./Form";
+import SubTitle from "../shared/SubTitle";
 
 interface Props {}
 
@@ -61,7 +62,7 @@ export default class Exercises extends Component<Props, State> {
 
     return (
       <div>
-        <h2>Exercises</h2>
+        <SubTitle>Exercises</SubTitle>
         <button onClick={() => this.showForm(Exercise.create(""))}>
           Add exercise
         </button>
