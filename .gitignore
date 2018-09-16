@@ -1,2 +1,9 @@
 node_modules
 dist
+build
+.gradle
+.vscode
+.classpath
+.project
+bin
+.settings

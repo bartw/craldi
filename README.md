@@ -1,6 +1,13 @@
 # craldi
 
-## scripts
+## backend
+
+```shell
+sudo docker build -t craldi .
+sudo docker run --rm -p 8080:8080 -P craldi
+```
+
+## frontend
 
 ```shell
 npm start
